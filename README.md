@@ -25,7 +25,7 @@
 
 ## 📄 White Paper
 
-> **[Mission-Critical Architectures: Convergence of Cyber-Defence and HFT via Augmented Engineering](./docs/White_Paper_Critical_Infrastructures.pdf (1))**  
+> **[Mission-Critical Architectures: Convergence of Cyber-Defence and HFT via Augmented Engineering](./docs/White_Paper_Critical_Infrastructures(1).pdf)**  
 > Full technical specification — mathematical substrate, architecture contracts, proof of execution.  
 > *Audience: Lead Engineers and Heads of Engineering at defence-technology and quantitative finance organisations.*
 

@@ -1,0 +1,31 @@
+[package]
+name    = "sg-common"
+version = "0.1.0"
+edition = "2021"
+authors = ["Shifting Ghost Architect Team"]
+license = "MIT"
+
+[lib]
+name = "sg_common"
+
+[dependencies]
+static_assertions = { version = "1.1", default-features = false }
+aya-ebpf = { version = "0.1.1", optional = true }
+# network-types doit être en no_std pour le kernel !
+network-types = { version = "0.0.1", default-features = false }
+bytemuck = { version = "1.14", features = ["derive"] }
+
+[features]
+# Cette feature sera activée uniquement lors du build du dossier bpf/
+aya-ebpf = ["dep:aya-ebpf"]
+
+[lints.rust]
+warnings    = "deny"
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used    = "deny"
+expect_used    = "deny"
+too_many_lines = "deny"
+recursive      = "deny"
+

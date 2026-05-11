@@ -1,0 +1,28 @@
+[package]
+name    = "sg-ebpf-programs"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "packet_ingress"
+path = "src/packet_ingress.rs"
+
+[[bin]]
+name = "tcp_connect"
+path = "src/tcp_connect.rs"
+
+[[bin]]
+name = "execve_monitor"
+path = "src/execve_monitor.rs"
+
+[[bin]]
+name = "tcp_fp_probe"
+path = "src/tcp_fp_probe.rs"
+
+[dependencies]
+# Noms corrigés
+aya-ebpf = "0.1.0"
+aya-log-ebpf = "0.1.0"
+# Ajout indispensable pour tes types FlowKey, etc.
+sg-common = { path = "../../sg-common", default-features = false, features = ["aya-ebpf"] }
+

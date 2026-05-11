@@ -1,0 +1,49 @@
+[package]
+name    = "sg-ebpf"
+version = "0.1.0"
+edition = "2021"
+authors = ["Shifting Ghost Architect Team"]
+license = "MIT"
+description = "eBPF loader and XDP ingestion layer for Project Shifting Ghost"
+
+[lib]
+name = "sg_ebpf"
+
+[dependencies]
+sg-common  = { path = "../sg-common" }
+sg-arena   = { path = "../sg-arena"  }
+
+# Aya — 100% Rust eBPF framework (userspace side)
+aya         = { version = "0.13", features = ["async_tokio"] }
+aya-log     = { version = "0.2" }
+
+# Async runtime for non-blocking ringbuf drain
+tokio       = { version = "1", features = ["rt", "macros", "sync", "time"] }
+
+# Capability inspection (Linux-only)
+caps        = { version = "0.5" }
+
+# Logging façade — no alloc in hot path; log macros compile away in release
+log         = { version = "0.4", default-features = false }
+
+# Thiserror for ergonomic error types (std-compatible)
+thiserror   = { version = "1" }
+
+# Byte-order utilities for network parsing
+byteorder   = { version = "1", default-features = false }
+
+[dev-dependencies]
+# std available in test builds
+env_logger  = { version = "0.11" }
+tokio       = { version = "1", features = ["rt", "macros", "rt-multi-thread"] }
+
+[lints.rust]
+# Loader is userspace — std is available.
+# unsafe_code is FORBIDDEN in the loader per INVARIANT-A; eBPF objects handled by Aya.
+warnings = "deny"
+
+[lints.clippy]
+unwrap_used    = "deny"
+expect_used    = "deny"
+too_many_lines = "deny"
+recursive      = "deny"

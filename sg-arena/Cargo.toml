@@ -1,0 +1,32 @@
+[package]
+name    = "sg-arena"
+version = "0.1.0"
+edition = "2021"
+authors = ["Shifting Ghost Architect Team"]
+license = "MIT"
+
+[lib]
+name = "sg_arena"
+
+[dependencies]
+sg-common = { path = "../sg-common" }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name    = "arena_bench"
+harness = false
+
+[lints.rust]
+# sg-arena is the ONE crate permitted unsafe_code (the bump allocator).
+unsafe_code = "allow"
+
+[lints.clippy]
+undocumented_unsafe_blocks = "deny"
+unwrap_used                = "deny"
+expect_used                = "deny"
+too_many_lines             = "deny"
+recursive                  = "deny"
+large_stack_arrays         = "deny"
+must_use_candidate         = "warn"

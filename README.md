@@ -46,8 +46,8 @@ This architecture is built for one class of operator: **sovereigns who cannot af
 
 | # | Title | Audience | Status |
 |---|-------|----------|--------|
-| **WP-01** | [Technical Architecture — Rust, eBPF/XDP, NASA P10, Zero-Allocation Substrate](./docs/White_Paper_Technical_Architecture.pdf) | Lead Engineers, Heads of Engineering | ✅ Published |
-| **WP-02** | [Strategic Doctrine — Adversarial Poisoning, SSA/Kalman Deception, Kinetic Atrophy](./docs/White_Paper_Strategic_Doctrine.pdf) | CISO, Cyber-Defence Strategists, CTO | ✅ Published |
+| **WP-01** | [Technical Architecture — Rust, eBPF/XDP, NASA P10, Zero-Allocation Substrate](./docs/White_Paper_Critical_Infrastructures.pdf) | Lead Engineers, Heads of Engineering | ✅ Published |
+| **WP-02** | [Strategic Doctrine — Adversarial Poisoning, SSA/Kalman Deception, Kinetic Atrophy](./docs/White_Paper_Critical_Infrastructures_t.pdf) | CISO, Cyber-Defence Strategists, CTO | ✅ Published |
 
 > Both papers are authoritative specifications. WP-01 defines the engineering contract. WP-02 defines the operational philosophy. Neither is optional reading for anyone deploying this system.
 

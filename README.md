@@ -349,7 +349,7 @@ Applied to network traffic, these models detect adversarial actors with a statis
 | Document | Description |
 |---|---|
 | 📄 [Technical White Paper](https://github.com/tahakouiyasse/shiva-protocol/blob/main/docs/White_Paper.pdf) | Full mathematical specification: all 7 stages with formal proofs, architecture diagrams, performance tables, and bibliography |
-| 📘 [White Paper — Critical Infrastructures](https://github.com/tahakouiyasse/shiva-protocol/blob/main/docs/White_Paper_Critical_Infrastructures.pdf) | Application of the statistical models to critical infrastructure protection, adversarial signal environments, and hardened network defense |
+| 📘 [White Paper — Critical Infrastructures](https://github.com/tahakouiyasse/shiva-protocol/blob/main/docs/White_Paper_Infrastructures.pdf) | Application of the statistical models to critical infrastructure protection, adversarial signal environments, and hardened network defense |
 
 ---
 

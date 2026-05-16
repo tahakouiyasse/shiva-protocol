@@ -1,0 +1,16 @@
+# --- eBPF / Kernel Specific ---
+# vmlinux.rs is generated at build time by sg-ebpf/build.rs via aya-tool.
+# It is kernel-specific. Committing it would break CO-RE on different kernels.
+vmlinux.rs
+**/vmlinux.rs
+
+# --- Rust / Cargo Targets ---
+target/
+**/target/
+
+# --- Environment & IDEs ---
+.Cargo/config.toml.bk
+*.swp
+*.o
+.DS_Store
+.vscode/

@@ -369,7 +369,7 @@ Applied to network traffic, these models detect adversarial actors with a statis
 ## Author
 
 **Taha Kouiyasse** — Independent Systems Architect & Protocol Designer  
-*Quantum Arch Research Initiative*
+*Quantum Arch Research Initiative* — Age 19
 
 Specialization: High-performance protocol architecture, statistical adversarial detection, zero-allocation systems design.
 
